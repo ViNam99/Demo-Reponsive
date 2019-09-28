@@ -1,4 +1,41 @@
-h1 {
-    color: black;
+h1,
+h2 {
+    color: white;
     background-color: red
+}
+
+
+/* Desktop-first */
+
+@media screen and (max-width:1200px) {
+    /* Lớn trc nhỏ sau nếu ko 1200 sẽ đè 992*/
+    h1 {
+        background-color: yellow
+    }
+}
+
+@media screen and (max-width:992px) {
+    h1 {
+        background-color: blue
+    }
+}
+
+
+/* Mobile-first */
+
+
+/* nhỏ trc lớn sau */
+
+@media screen and (min-width:992px) {
+    /* 992-1200 sẽ hiện màu đen */
+    h2 {
+        background-color: black
+    }
+}
+
+@media screen and (min-width:1200px) {
+    /* Lớn hơn 1200 màu hồng */
+    h2 {
+        background-color: pink
+    }
 }
